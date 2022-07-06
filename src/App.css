@@ -1,0 +1,324 @@
+.App {
+  padding-top: 60px;
+}
+
+.page-section {
+  /* overflow-x: hidden; */
+}
+
+.page-section.section1 {
+  display: grid;
+  grid-gap: 40px;
+  grid-template-columns: repeat(10, minmax(0, 1fr));
+  padding: 40px 120px 0px 160px;
+}
+
+.section1 .section1-left {
+  grid-area: 1 / 1 / span 5 / span 5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.section1 .section1-left h1 {
+  color: #232c35;
+  font-size: 50px;
+  width: 470px;
+  line-height: 55px;
+  margin-bottom: 0;
+}
+
+.section1 .section1-left p {
+  color: #4f4f4f;
+  font-size: 18px;
+  width: 320px;
+  font-weight: 600;
+}
+
+.section1 .section1-right {
+  grid-area: 1 / 6 / span 5 / span 5;
+}
+
+.section1 .section1-right img {
+  width: 100%;
+  height: 100%;
+}
+
+.page-section.section2 {
+  color: #fff;
+  background-color: #5c1a8d;
+  position: relative;
+  padding: 40px 20px 0px 20px;
+}
+
+.section2 .section2-description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section2 .section2-description p {
+  max-width: 360px;
+  text-align: center;
+}
+
+.section2 .section2-description h1 {
+  max-width: 500px;
+  text-align: center;
+}
+
+.section2 .section2-steps {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section2 .section2-steps-right {
+  max-width: 600px;
+}
+
+.section2 .section2-steps-li {
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.section2 .section2-steps-pill {
+  background-color: #fff;
+  height: 55px;
+  width: 55px;
+  border-radius: 50%;
+  color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  margin-right: 20px;
+}
+
+.section2 .section2-steps-pill.first-pill {
+  background-color: #f2c94c;
+}
+
+.section2 .section2-steps-li p:first-child {
+  font-size: 23px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.section2 .section2-steps-li p:last-child {
+  max-width: 325px;
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
+.page-section.section3 {
+  display: flex;
+  position: relative;
+}
+
+.page-section.section3 h1 {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 60px;
+}
+
+.section3 .section3-left {
+  width: 50%;
+  background-color: #a792fe12;
+  box-sizing: border-box;
+}
+
+.section3 .section3-right {
+  width: 50%;
+  background-color: #fff;
+  box-sizing: border-box;
+}
+
+.section3 .section3-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 160px 80px 60px 20px;
+}
+
+.section3 .section3-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 160px 20px 60px 80px;
+}
+
+.section3 .section3-why-card {
+  max-width: 300px;
+  margin-bottom: 50px;
+}
+
+.section3 .section3-why-card-pill {
+  height: 60px;
+  width: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.section3 .section3-why-card-pill.car {
+  background-color: #56ccf2;
+}
+
+.section3 .section3-why-card-pill.time {
+  background-color: #f2c94c;
+}
+
+.section3 .section3-why-card-pill.settings {
+  background-color: #6fcf97;
+}
+
+.section3 .section3-why-card-pill.safety {
+  background-color: #bb6bd9;
+}
+
+.section3 .section3-why-card p:nth-child(2) {
+  color: #232c35;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.section3 .section3-why-card p:last-child {
+  color: #4f4f4f;
+}
+
+.page-section.section4 {
+  background-color: #f2c94c;
+  padding: 80px 60px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section4 p {
+  max-width: 400px;
+}
+
+.section4 .form {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.section4 input {
+  background-color: transparent;
+  border: 1px solid #fff;
+  padding: 20px;
+  height: 40px;
+  width: 300px;
+  box-sizing: border-box;
+  color: #fff;
+  outline: none;
+}
+
+.section4 input::placeholder {
+  color: #fff;
+}
+
+.section4 button {
+  background-color: #000;
+  color: #fff;
+  padding: 20px;
+  height: 40px;
+  width: 120px;
+  border: none;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 60rem) {
+  .page-section.section1 {
+    padding: 40px 40px 0px 40px;
+  }
+  .section1 .section1-left {
+    grid-area: 1 / 1 / span 5 / span 10;
+  }
+  .section1 .section1-right {
+    grid-area: 6 / 1 / span 5 / span 10;
+    display: flex;
+    justify-content: center;
+  }
+  .section1 .section1-right img {
+    width: 450px;
+  }
+  .section2 .section2-steps {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
+@media (max-width: 40rem) {
+  .page-section {
+    overflow-x: hidden;
+  }
+  .page-section.section1 {
+    padding: 40px 20px 0px 20px;
+  }
+  .section1 .section1-left h1 {
+    font-size: 30px;
+    width: 280px;
+    line-height: 30px;
+  }
+  .section1 .section1-left p {
+    font-size: 15px;
+    width: 320px;
+  }
+  .section1 .section1-right img {
+    width: 350px;
+  }
+  .page-section.section2-steps img {
+    width: 300px;
+  }
+  .page-section.section3 {
+    flex-direction: column;
+  }
+  .section3 .section3-left {
+    width: 100%;
+  }
+  .section3 .section3-right {
+    width: 100%;
+  }
+  .section3 .section3-left {
+    align-items: center;
+    padding: 160px 20px 0px 20px;
+  }
+  .section3 .section3-right {
+    align-items: center;
+    padding: 40px 20px 60px 20px;
+  }
+  .section4 input {
+    width: 230px;
+  }
+  .section4 button {
+    width: 100px;
+  }
+}
+
+@media (max-width: 25rem) {
+  .page-section.section1 {
+    padding: 40px 10px 0px 10px;
+  }
+  .section1 .section1-right img {
+    width: 300px;
+  }
+  .section2 .section2-description h1 {
+    font-size: 30px;
+  }
+  .section2 .section2-steps-pill {
+    height: 45px;
+    width: 45px;
+    font-size: 12px;
+    padding: 0 1px;
+  }
+}
